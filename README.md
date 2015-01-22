@@ -1,10 +1,13 @@
-H3P2017E11 - Les chefs d'oeuvre de l'humanité
+Influence
 ==========
 
-HETIC's P2017 project developped in 2 weeks
+HETIC's P2017 project developped in 2 weeks. 
+
+This project is an experience to find out masterpieces and their influences over time.
 
 Link : http://influence.robinmastromarino.com/
 
+In this project, I create the API on Laravel and return data with JSON.
 
 ## Dependencies :
 
