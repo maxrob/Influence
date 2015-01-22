@@ -1,0 +1,127 @@
+@cult-color: darken(#D3222A, 15%);; // Red
+@socio-color: #08993C; // Green
+@tech-color: darken(#F3CA3F, 15%); // Yellow
+@eco-color: #00568C; // Blue
+
+
+.cultGroup {
+
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 160s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .cult {
+        .outer-circle {
+            stroke: @cult-color;
+        }
+
+        .inner-circle {
+            fill: @cult-color;
+        }
+    }
+}
+
+.socioGroup {
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 50s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    animation: gravity;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .socio {
+        .outer-circle {
+            stroke: @socio-color;
+        }
+        .inner-circle {
+            fill: @socio-color;
+        }
+
+    }
+
+}
+
+.techGroup {
+    -webkit-animation:  gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .tech {
+
+        .outer-circle {
+            stroke: @tech-color;
+        }
+        .inner-circle {
+            fill: @tech-color;
+        }
+
+    }
+}
+
+
+.ecoGroup {
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 80s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+    .eco {
+
+        .outer-circle {
+            stroke: @eco-color;
+        }
+        .inner-circle {
+            fill: @eco-color;
+        }
+
+    }
+
+}
+//
+//.inner-circle:hover .inner-circle {
+//     transform: scale(1.7);
+//}
+
+
+.stopAnimation{
+    animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes gravity {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes gravity {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+
+

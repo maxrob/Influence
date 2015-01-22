@@ -1,0 +1,505 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    font-family: 'proxima-nova', helvetica, arial, sans-serif;
+    position: fixed;
+}
+
+.univers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+	z-index: 10;
+}
+
+.loader {
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 11;
+    right: ~"calc(30% - 250px)";
+    width: 250px;
+    height: 100%;
+    background: #cc0033;
+
+    img {
+        margin: 70% 0;
+        padding: 10px;
+        width: 230px;
+    }
+
+}
+
+.back {
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+        top: 0;
+        right: ~"calc(30% - 60px)";
+        height: 60px;
+        width: 60px;
+        border-right: 0px solid #ABA194;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        transition: all 0.4s ease-in-out;
+
+        p {
+            margin: 0;
+            padding: 25px 0;
+            font-size: 0.8em;
+            color: #ABA194;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            background-color: #E7E2DC;
+        }
+}
+
+.impacts {
+    margin: 0;
+    position: absolute;
+    z-index: 15;
+    right: 0;
+    bottom: -100%;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    overflow: scroll;
+
+    .line {
+        position: absolute;
+        z-index: 15;
+        height: 100%;
+        width: 1px;
+        background: #ABA194;
+        left: 25px;
+    }
+
+    .impacts-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li{
+            position: relative;
+            width: 100%;
+            height: 150px;
+            background: #fff;
+
+            &:hover > .inner-dot {
+                transform: scale(1.8);
+            }
+            h2 {
+                margin: 0;
+                padding: 30px 0 20px 70px;
+                font-size: 1em;
+                font-weight: 600;
+                color: #ABA194;
+                font-family: 'Playfair Display', sans-serif;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0;
+                padding: 0 20px 0 70px;
+                font-size: 0.8em;
+                font-weight: 300;
+                color: #2C3233;
+            }
+
+            .inner-dot {
+                position: absolute;
+                z-index: 25;
+                top: 75px;
+                left: 30px;
+                width: 8px;
+                height: 8px;
+                background: #CA054D;
+                border-radius: 50%;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .dot {
+                position: absolute;
+                top: 70px;
+                left: 25px;
+                width: 16px;
+                height: 16px;
+                background: #fff;
+                border-radius: 50%;
+                border: 1px solid #ABA194;
+            }
+
+            .border-bottom {
+
+                position: absolute;
+                z-index: 5;
+                right: 0;
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+                background: #e7e7e7;
+            }
+
+            .border-left {
+
+                position: absolute;
+                z-index: 20;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 40px;
+
+
+
+//                &.cult {
+//                    background: #992A31;
+//                }
+//
+//                &.tech {
+//                    background: #285238;
+//                }
+            }
+        }
+    }
+}
+
+.data {
+
+    margin: 0;
+    position: absolute;
+    right: 0;
+    z-index: 15;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+
+    .cover-image {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        background: #224870;
+        background-image: url('../img/joconde.jpg');
+        background-size: cover;
+    }
+
+    .content {
+
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        margin: 0;
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 30%;
+
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+            padding-bottom: 20px;
+
+            h1 {
+                font-size: 2em;
+                font-weight: 300;
+                color: #ABA194;
+                padding-top: 35px;
+                margin: 0 0 5px 40px;
+                text-transform: uppercase;
+                font-family: 'Playfair Display';
+                font-weight: 300;
+            }
+
+            .infos {
+                font-size: 1em;
+                font-weight: 300;
+                color: #2C3233;
+                margin: 0 40px;
+            }
+
+            .separator {
+
+                display: block;
+                height: 1px;
+                width: 50px;
+                background-color: #ABA194;
+                margin: 30px auto;
+            }
+
+            .gradient-down {
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                bottom: -50px;
+                z-index: 10;
+                background-image: url('../img/white-gradient-down.png');
+                background-repeat: repeat-x;
+                background-position: bottom;
+            }
+
+        }
+
+        .text {
+            overflow: scroll;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+            position: relative;
+            padding-top: 30px;
+            height: 50%;
+
+            p {
+                line-height: 1.4em;
+                font-size: 1em;
+                color: #46494C;
+                margin: 0 40px;
+                font-family: 'Minion Pro';
+                text-align: left;
+            }
+
+        }
+
+        .footer-data {
+            position: relative;
+            height: 20%;
+            left: 0;
+
+            .gradient-up {
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                top: -40px;
+                z-index: 10;
+                background-image: url('../img/white-gradient.png');
+                background-repeat: repeat-x;
+                background-position: bottom;
+            }
+
+            .button {
+
+                position: absolute;
+                bottom: 45px;
+                z-index: 20;
+                width: 200px;
+                right: ~"calc(50% - 110px)";
+                display: block;
+
+
+                &.more {
+                    margin: 0;
+                    padding: 10px;
+                    color: #ABA194;
+                    font-size: 0.9em;
+                    font-family: 'Open Sans', sans-serif;
+                    text-transform: uppercase;
+                    border: 1px solid #ABA194;
+                    text-align: center;
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+
+    }
+
+
+}
+
+canvas {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    position: absolute;
+    overflow: scroll;
+    z-index: 4;
+	&.centerVertical {
+		position: fixed;
+		top: 0; bottom: 0;
+		margin: auto;
+	}
+}
+
+circle {
+    transform-origin: 50% 50%;
+    transition: stroke-width 0.4s ease-in-out;
+    fill: #000;
+}
+
+circle:hover {
+    stroke-width: 4;
+}
+
+
+
+
+
+
+.oeuvre {
+    position: absolute;
+    z-index: 100;
+    top: ~"calc(50% - 35px)";
+    left: ~"calc(50% - 35px)";
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    background-image: url('../img/joconde.jpg');
+    background-size: cover;
+}
+
+ .inner-circle {
+    fill: #fff;
+    transition: all 0.4s ease-in-out;
+
+ }
+
+ .outer-circle {
+     stroke-width: 1px;
+     fill: none;
+ }
+
+.cultGroup {
+
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 50s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+    .cult {
+
+
+
+
+        .outer-circle {
+            stroke: #197BBD;
+        }
+
+        .inner-circle {
+            fill: #197BBD;
+        }
+
+    }
+}
+
+
+
+.socioGroup {
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    animation: gravity;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .socio {
+
+        .outer-circle {
+            stroke: #AF3E4D;
+        }
+        .inner-circle {
+            fill: #AF3E4D;
+        }
+
+    }
+
+}
+
+
+.techGroup {
+    -webkit-animation:  gravity 30s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .tech {
+
+        .outer-circle {
+            stroke: #F1E8B8;
+        }
+        .inner-circle {
+            fill: #F1E8B8;
+        }
+
+    }
+}
+
+
+.ecoGroup {
+    -webkit-animation: gravity; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 150s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: gravity;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+    .eco {
+
+        .outer-circle {
+            stroke: #88D18A;
+        }
+        .inner-circle {
+            fill: #88D18A;
+        }
+
+    }
+}
+//
+//.inner-circle:hover .inner-circle {
+//     transform: scale(1.7);
+//}
+
+
+.orbit:hover + .ecoGroup, .orbit:hover + .techGroup, .orbit:hover + .socioGroup, .orbit:hover + .cultGroup{
+    animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes gravity {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes gravity {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+
+

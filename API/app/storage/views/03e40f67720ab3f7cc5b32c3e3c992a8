@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<?php echo $__env->make('includes.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php foreach($oeuvres as $oeuvre): ?>
+		<div class="full-width oeuvre">
+			<div class="image-col">
+				<div class="image-container">
+					<?php echo HTML::image('photos/'.$oeuvre['photo']); ?>
+
+				</div>
+			</div>
+
+			<div class="text-col">
+				<h2><?php echo $oeuvre['titre']; ?></h2>
+			</div>
+			<div class="actions-col">
+			<button class='btn btn-primary oeuvreBtn'><?php echo HTML::decode(HTML::linkAction('AdminController@dataOeuvre', 'Edit', array('id' => $oeuvre['id']), array('class' => 'white'))); ?></button>
+			<button class='btn btn-danger oeuvreBtn'><?php echo HTML::decode(HTML::linkAction('AdminController@supprOeuvre', 'Supprimer', array('id' => $oeuvre['id']), array('class' => 'white'))); ?></button>
+			</div>
+		</div>
+		<?php if($oeuvre['impacts']!=NULL): ?>
+			<?php foreach($oeuvre['impacts'] as $impact): ?>
+				<div class="full-width impact">
+					<div class="text-col"><h2><?php echo $impact['titre']; ?></h2></div>
+					<div class="actions-col">
+						<button class='btn btn-primary impactBtn'><?php echo HTML::decode(HTML::linkAction('AdminController@dataImpact', 'Edit', array('id' => $impact['id']), array('class' => 'white'))); ?></button>
+						<button class='btn btn-danger impactBtn'><?php echo HTML::decode(HTML::linkAction('AdminController@supprImpact', 'Supprimer', array('id' => $impact['id']), array('class' => 'white'))); ?></button>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	<?php endforeach; ?>	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

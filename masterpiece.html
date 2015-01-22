@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Impact of Masterpieces</title>
+	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/magnifier.css">
+	<script src="http://use.typekit.net/ewa4ajr.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="mobile"></div>
+
+	<div class="univers">
+
+        <canvas class="dots"></canvas>
+        <div class="oeuvre">
+        </div>
+
+        <svg width="100%" height="100%" viewBox="-400 -400 800 800">
+            <circle class="orbit" data-group="cultGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="300" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="ecoGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="210" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="socioGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="140" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="techGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="80" style="opacity: 0.2;"></circle>
+
+            <g class="techGroup"></g>
+            <g class="socioGroup"></g>
+            <g class="cultGroup"></g>
+            <g class="ecoGroup"></g>
+        </svg>
+
+        <div class="navigation">
+            <div class="previous"><span>&lt;</span><p>La Joconde</p></div>
+            <div class="go-home">X</div>
+            <div class="next"><p>Les Quatre Saisons</p><span>&gt;</span></div>
+        </div>
+        <div class="legende">
+            <ul>
+                <li>
+                    <span class="outer-dot cult"><span class="inner-dot cult"></span></span>
+                    <p>Impact culturel</p>
+                </li>
+                <li>
+                    <span class="outer-dot tech"><span class="inner-dot tech"></span></span>
+                    <p>Impact technologique</p>
+                </li>
+                <li>
+                    <span class="outer-dot socio"><span class="inner-dot socio"></span></span>
+                    <p>Impact sociologique</p>
+                </li>
+                <li>
+                    <span class="outer-dot eco"><span class="inner-dot eco"></span></span>
+                    <p>Impact économique</p>
+                </li>
+
+            </ul>
+        </div>
+	</div>
+
+	<div class="data" id-oeuvre="1">
+	    <div class="cover-image">
+	        <div class="enlarge"><img src ="./assets/img/enlarge.png"/></div>
+	    </div>
+
+	    <div class="content">
+            <div class="header">
+                <h1>LA JOCONDE</h1>
+                <span class="infos"><span class="auteur">Leonard de Vinci</span> | <span class="genre">Tableau</span> | <span class="date">1503 - 1506</span></span>
+                <span class="separator"></span>
+                <div class="gradient-down"></div>
+            </div>
+            <div class="text">
+                <p>La Joconde est le portrait le plus célèbre au monde. L’identité du modèle est régulièrement remise en question, mais on admet généralement qu’il s’agit d’une dame florentine, prénommée Lisa, épouse de Francesco del Giocondo. Le nom Giocondo a été très tôt francisé en Joconde, mais le tableau est aussi connu sous le titre de Portrait de Monna Lisa, monna signifiant dame ou madame en italien ancien.</p>
+
+            </div>
+            <div class="footer-data">
+                <div class="gradient-up"></div>
+
+                <div class="button go-impacts" href="#">découvrir les impacts</div>
+            </div>
+
+
+	    </div>
+
+	</div>
+
+	<div class="loader">
+	    <img src="./assets/img/loader.gif" />
+	</div>
+
+	<div class="impacts">
+        <div class="header">
+            <div class="go-desc"><div class="icon"><img src="./assets/img/collapse3.png"></div></div>
+        </div>
+
+        <ul class="impacts-list">
+
+        </ul>
+	</div>
+
+
+	<div class="zoom">
+        <div class="overlay"></div>
+        <div class="container"></div>
+	</div>
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./assets/js/data.js"></script>
+    <script type="text/javascript" src="./assets/js/event.js"></script>
+    <script type="text/javascript" src="./assets/js/magnifier.js"></script>
+    <script type="text/javascript" src="./assets/js/stars.js"></script>
+	<script type="text/javascript" src="./assets/js/UI.js"></script>
+	<script type="text/javascript" src="./assets/js/model.js"></script>
+	<script type="text/javascript" src="./assets/js/controller.js"></script>
+
+</body>
+</html>

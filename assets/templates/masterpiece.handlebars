@@ -1,0 +1,128 @@
+<div class="fixed">
+        <div class="univers">
+
+        <div class="lightbox">
+
+
+            <div class="tech">
+                <div>
+                    <h2 class="tech">Impact technique</h2>
+
+                    <p>Un impact technique engendre la naissance de nouvelles méthodes associées à un savoir-faire professionnel. Il est souvent traduit par la réutilisation ou l'amélioration de cette technique par les générations futures.</p>
+                </div>
+            </div>
+
+            <div class="socio">
+                <div>
+                    <h2 class="socio">Impact social</h2>
+                    <p>Un impact social exerce une influence sur la société c'est-à-dire un groupe d'humains. Un chef d'oeuvre peut influer sur les représentations (façon de penser) ou sur les comportements (façon d'agir) de groupes de personnes.</p>
+                </div>
+            </div>
+
+            <div class="eco">
+                <div>
+                    <h2 class="eco">Impact économique / marketing</h2>
+                    <p>Un impact économique ou marketing désigne les supports issus de l'utilisation d'une oeuvre dans un but marketing et/ou une étude quantitative de ses répercussions économiques sur la société.</p>
+                </div>
+            </div>
+
+
+            <div class="cult">
+                <div>
+                   <h2 class="cult">Impact culturel</h2>
+                   <p>Un impact culturel peut être perçu comme étant la représentation d'un enrichissement des connaissances et/ou du patrimoine culturel d'un individu, ou d'une société.</p>
+                </div>
+            </div>
+        </div>
+
+        <canvas class="dots"></canvas>
+        <div class="oeuvre">
+        	<img src="http://ns329853.ip-37-187-117.eu/apiInfluence/API/public/photos/{{photo}}" alt="">
+        </div>
+
+        <svg width="100%" height="100%" viewBox="-400 -400 800 800">
+            <circle class="orbit" data-group="cultGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="300" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="ecoGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="210" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="socioGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="140" style="opacity: 0.2;"></circle>
+            <circle class="orbit" data-group="techGroup" stroke="#fff" cx="0" cy="0" fill="none" stroke-width="1" r="80" style="opacity: 0.2;"></circle>
+
+            <g class="techGroup"></g>
+            <g class="socioGroup"></g>
+            <g class="cultGroup"></g>
+            <g class="ecoGroup"></g>
+        </svg>
+
+        <div class="navigation">
+            <div class="previous" id-oeuvre="{{previousNumber}}"><span>&lt;</span><p>{{previous}}</p></div>
+            <div class="go-home">X</div>
+            <div class="next" id-oeuvre="{{nextNumber}}"><p>{{next}}</p><span>&gt;</span></div>
+        </div>
+        <div class="legende">
+            <ul>
+                <li>
+                    <span class="outer-dot cult"><span class="inner-dot cult"></span></span>
+                    <p>Impact culturel</p>
+                </li>
+                <li>
+                    <span class="outer-dot tech"><span class="inner-dot tech"></span></span>
+                    <p>Impact technique</p>
+                </li>
+                <li>
+                    <span class="outer-dot socio"><span class="inner-dot socio"></span></span>
+                    <p>Impact social</p>
+                </li>
+                <li>
+                    <span class="outer-dot eco"><span class="inner-dot eco"></span></span>
+                    <p>Impact économique / marketing</p>
+                </li>
+
+            </ul>
+        </div>
+	</div>
+<div class="panels">
+
+	<div class="data" id-oeuvre="1">
+	    <div class="cover-image" style="background-image: url('http://ns329853.ip-37-187-117.eu/apiInfluence/API/public/photos/{{photo}}')">
+	        <div class="enlarge"><img src ="./assets/img/enlarge.png"/></div>
+	    </div>
+
+	    <div class="content">
+            <div class="header">
+                <h1>{{titre}}</h1>
+                <span class="infos"><span class="auteur">{{auteur}}</span> | <span class="genre">{{genre}}</span> | <span class="date">{{date}}</span></span>
+                <div class="gradient-down"></div>
+            </div>
+            <div class="text">
+                <p>{{description}}</p>
+
+            </div>
+            <div class="footer-data">
+                <div class="gradient-up"></div>
+
+                <div class="button go-impacts" href="#">Découvrir les impacts</div>
+            </div>
+
+
+	    </div>
+
+	</div>
+
+	<div class="loader">
+	    <div id="loader"></div>
+	</div>
+
+	<div class="impacts">
+        <div class="header">
+            <div class="go-desc"><div class="icon"><img src="./assets/img/collapse3.png"></div></div>
+        </div>
+
+        <ul class="impacts-list">
+        </ul>
+	</div>
+
+</div>
+
+	<div class="zoom">
+        <div class="overlay"></div>
+        <div class="container"></div>
+	</div>

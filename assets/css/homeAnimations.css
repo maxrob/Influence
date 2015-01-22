@@ -1,0 +1,11 @@
+.enlarge-logo {
+  bottom: 0;
+  font-size: 3rem;
+}
+.appearance-after-logo {
+  top: 25%;
+  opacity: 0;
+}
+.new-transition {
+  transition: 0.4s all ease-in-out;
+}

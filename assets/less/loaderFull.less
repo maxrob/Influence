@@ -1,0 +1,25 @@
+.loader-full {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(0,0,0,1);
+	transition: 700ms all ease;
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+	color: #ffffff;
+}
+
+#loaderSVG {
+    position: absolute;
+    top: 40%;
+    left: ~"calc(50% - 90px)";
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    background: transparent url('../img/loaderFull.svg') 0px 0px no-repeat;
+}
+
+.vanish {
+	opacity: 0;
+	visibility: hidden;
+}

@@ -1,0 +1,17 @@
+.loader-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  transition: 700ms all ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+  color: #ffffff;
+}
+.vanish {
+  opacity: 0;
+  visibility: hidden;
+}
