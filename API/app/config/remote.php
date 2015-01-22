@@ -29,9 +29,9 @@ return array(
 	'connections' => array(
 
 		'production' => array(
-			'host'      => '37.187.117.203',
-			'username'  => 'maxime',
-			'password'  => 'Asx1Cdz2Efv3',
+			'host'      => '',
+			'username'  => '',
+			'password'  => '',
 			'key'       => '',
 		),
 
