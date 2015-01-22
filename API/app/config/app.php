@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://37.187.117.203',
+	'url' => '',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'zIy7T9QSZKcSJNaicpMJdoW9IjUdXMqi',
+	'key' => '',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
